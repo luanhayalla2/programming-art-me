@@ -54,7 +54,7 @@ const HeroSection = () => {
           </p>
 
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-foreground">
-            Seu Nome<span className="text-primary">.</span>
+            Luã Hayalla Oliveira Silva<span className="text-primary">.</span>
           </h1>
 
           <div className="h-12 md:h-14 mb-6">
@@ -71,7 +71,7 @@ const HeroSection = () => {
 
           <div className="flex gap-4 items-center">
             <motion.a
-              href="https://github.com"
+              href="https://github.com/luanhayalla2"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}

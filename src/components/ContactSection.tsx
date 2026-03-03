@@ -32,7 +32,7 @@ const ContactSection = () => {
 
           <div className="flex justify-center gap-6 mt-10">
             <a
-              href="https://github.com"
+              href="https://github.com/luanhayalla2"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
