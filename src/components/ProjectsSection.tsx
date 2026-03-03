@@ -8,7 +8,7 @@ const projects = [
     tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
     stars: 48,
     forks: 12,
-    github: "https://github.com",
+    github: "https://github.com/luanhayalla2",
     demo: "https://example.com",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     tech: ["Python", "FastAPI", "MongoDB", "Docker"],
     stars: 32,
     forks: 8,
-    github: "https://github.com",
+    github: "https://github.com/luanhayalla2",
   },
   {
     title: "Weather Dashboard",
@@ -25,7 +25,7 @@ const projects = [
     tech: ["Next.js", "TypeScript", "Recharts", "OpenWeather API"],
     stars: 25,
     forks: 5,
-    github: "https://github.com",
+    github: "https://github.com/luanhayalla2",
     demo: "https://example.com",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     tech: ["React", "Socket.io", "Node.js", "Redis"],
     stars: 67,
     forks: 20,
-    github: "https://github.com",
+    github: "https://github.com/luanhayalla2",
     demo: "https://example.com",
   },
 ];

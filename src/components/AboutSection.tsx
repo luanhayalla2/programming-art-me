@@ -43,7 +43,7 @@ const AboutSection = () => {
               </p>
               <p className="text-muted-foreground pl-4">
                 <span className="text-foreground">nome</span>:{" "}
-                <span className="text-primary">"Seu Nome"</span>,
+                <span className="text-primary">"Luã Hayalla Oliveira Silva"</span>,
               </p>
               <p className="text-muted-foreground pl-4">
                 <span className="text-foreground">local</span>:{" "}
