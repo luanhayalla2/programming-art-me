@@ -1,41 +1,42 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Star, GitFork } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Plataforma completa de e-commerce com carrinho, checkout e painel admin.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    stars: 48,
-    forks: 12,
-    github: "https://github.com/luanhayalla2",
-    demo: "https://example.com",
+    title: "PowerFit",
+    description: "Sistema de gerenciamento para academias com controle de alunos, treinos e planos.",
+    tech: ["TypeScript", "React", "Supabase"],
+    github: "https://github.com/luanhayalla2/PowerFit",
   },
   {
-    title: "Task Manager API",
-    description: "API RESTful para gerenciamento de tarefas com autenticação JWT.",
-    tech: ["Python", "FastAPI", "MongoDB", "Docker"],
-    stars: 32,
-    forks: 8,
-    github: "https://github.com/luanhayalla2",
+    title: "MERCADO-FULLSTACK",
+    description: "Aplicação fullstack de mercado com backend em Python e interface completa.",
+    tech: ["Python", "Full Stack", "API REST"],
+    github: "https://github.com/luanhayalla2/MERCADO-FULLSTACK",
   },
   {
-    title: "Weather Dashboard",
-    description: "Dashboard de clima em tempo real com gráficos interativos e geolocalização.",
-    tech: ["Next.js", "TypeScript", "Recharts", "OpenWeather API"],
-    stars: 25,
-    forks: 5,
-    github: "https://github.com/luanhayalla2",
-    demo: "https://example.com",
+    title: "Trivia Trek Academy",
+    description: "Plataforma educacional gamificada com quizzes interativos e sistema de pontuação.",
+    tech: ["TypeScript", "React", "Gamificação"],
+    github: "https://github.com/luanhayalla2/trivia-trek-academy",
   },
   {
-    title: "Chat Realtime",
-    description: "Aplicação de chat em tempo real com salas, emojis e notificações push.",
-    tech: ["React", "Socket.io", "Node.js", "Redis"],
-    stars: 67,
-    forks: 20,
-    github: "https://github.com/luanhayalla2",
-    demo: "https://example.com",
+    title: "MICROSERVICES-DEMO",
+    description: "Demonstração de arquitetura de microsserviços com comunicação entre serviços.",
+    tech: ["JavaScript", "Node.js", "Microservices", "RabbitMQ"],
+    github: "https://github.com/luanhayalla2/MICROSERVICES-DEMO",
+  },
+  {
+    title: "Blog Científico",
+    description: "Blog para publicação de artigos científicos com interface moderna e responsiva.",
+    tech: ["Vue.js", "CSS", "Markdown"],
+    github: "https://github.com/luanhayalla2/blog-cientifico",
+  },
+  {
+    title: "CATALOG-API",
+    description: "API de catálogo de produtos com CRUD completo e validação com Zod.",
+    tech: ["JavaScript", "Node.js", "API REST", "Zod"],
+    github: "https://github.com/luanhayalla2/CATALOG-API",
   },
 ];
 
@@ -54,7 +55,7 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -77,9 +78,9 @@ const ProjectsSection = () => {
                   >
                     <Github size={18} />
                   </a>
-                  {project.demo && (
+                  {'demo' in project && (project as any).demo && (
                     <a
-                      href={project.demo}
+                      href={(project as any).demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-accent transition-colors"
@@ -105,14 +106,6 @@ const ProjectsSection = () => {
                 ))}
               </div>
 
-              <div className="flex gap-4 text-xs text-muted-foreground font-mono">
-                <span className="flex items-center gap-1">
-                  <Star size={14} /> {project.stars}
-                </span>
-                <span className="flex items-center gap-1">
-                  <GitFork size={14} /> {project.forks}
-                </span>
-              </div>
             </motion.div>
           ))}
         </div>
